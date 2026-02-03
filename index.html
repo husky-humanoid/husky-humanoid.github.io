@@ -77,6 +77,12 @@
   }
 
 </style>
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   <meta charset="utf-8">
 
@@ -104,7 +110,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/icon-ai.png">
+  <link rel="icon" href="./static/images/icon.png" sizes="128x128">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -112,7 +118,7 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kungfubot2</title>
+  <title>HUSKY</title>
 </head>
 <body>
  <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -139,6 +145,9 @@
             <a class="navbar-item" href="https://kungfu-bot.github.io/">
               KungfuBot
             </a>
+            <a class="navbar-item" href="https://kungfubot2-humanoid.github.io/">
+              KungfuBot2
+            </a>
           </div>
         </div>
       </div>
@@ -151,32 +160,32 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">
-            <span style="font-variant: small-caps;">KungfuBot</span>
-            <span style="font-weight: bold; color: firebrick;">2</span>:
-            Learning Versatile Motion Skills for Humanoid Whole-Body Control
+            <span style="font-variant: small-caps;"><span style="color: #2e86c1"><b>HUSKY</b></span>:</span>
+            <!-- <span style="font-weight: bold; color: firebrick;">2</span>: -->
+            Humanoid Skateboarding System via Physics-Aware Whole-Body Control
           </h1>
           <div class="is-size-4 publication-authors">
             <span class="author-block">
-              <a href="https://bwrooney82.github.io/">Jinrui Han</a><sup>1,2</sup>,
+              <a href="https://bwrooney82.github.io/">Jinrui Han</a><sup>&#42;1,2</sup>,
             </span>
              <span class="author-block">
-              <a href="https://shi-soul.github.io/">Weiji Xie</a><sup>1,2</sup>,
+              <a href="https://scholar.google.com/citations?user=iDv038AAAAAJ&hl=zh-CN">Dewei Wang</a><sup>&#42;1,3</sup>,
             </span>
             <span class="author-block">
-              <a href="https://github.com/Gabril17">Jiakun Zheng</a><sup>1,3</sup>,
+              <a href="https://github.com/chenyunzhanggit">Chenyun Zhang</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=aVte5j4AAAAJ">Jiyuan Shi</a><sup>1</sup>,
+              <a href="https://xinzheliu.github.io/">Xinzhe Liu</a><sup>1,4</sup>,
             </span>
             <br/>
             <span class="author-block">
-              <a href="https://wnzhang.net">Weinan Zhang</a><sup>2</sup>,
+              <a href="http://luoping.me/">Ping Luo</a><sup>5</sup>,
             </span>
             <span class="author-block">
-              <a href="https://kungfuBot2.github.io">Ting Xiao</a><sup>3</sup>,
+              <a href="http://baichenjia.cn/">Chenjia Bai</a><sup>&dagger;1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://baichenjia.github.io/">Chenjia Bai</a><sup>&dagger; 1</sup>,
+              <a href="https://scholar.google.com.hk/citations?user=ahUibskAAAAJ&hl=zh-TW">Xuelong Li</a><sup> 1</sup>,
             </span>
           </div>
 
@@ -184,14 +193,23 @@
             <!-- <span class="author-block">Affiliation</span> -->
             <span class="author-block"><sup>1</sup>Institute of Artificial Intelligence (TeleAI), China Telecom</span>
             <span class="author-block"><sup>2</sup>Shanghai Jiao Tong University</span>
-            <span class="author-block"><sup>3</sup>East China University of Science and Technology</span>
+            <span class="author-block"><sup>3</sup>University of Science and Technology of China</span>
+            <span class="author-block"><sup>4</sup>ShanghaiTech University</span>
+            <span class="author-block"><sup>5</sup>The University of Hong Kong</span>
             <br/>
-            <span class="author-block"><sup>&dagger;</sup>Corresponding Author</span><br>
+            <span class="author-block">
+              <sup>&#42;</sup>Equal Contribution
+            </span>
+            <span class="author-block" style="margin-left: 20px;">
+              <sup>&dagger;</sup>Corresponding Author
+            </span>
           </div>
               <div style="display: flex; justify-content: center; align-items: center; gap: 40px; margin-top: 20px;">
                 <img src="./static/images/teleai.png" width="15%">
                 <img src="./static/images/sjtu.png" width=160px>
-                <img src="./static/images/ECUST.svg" width="15%">
+                <img src="./static/images/ustc.png" width="15%">
+                <img src="./static/images/shanghaitech.svg" width="15%">
+                <img src="./static/images/hku.jpg" width="13%">
               </div>
             </span>
           
@@ -199,7 +217,7 @@
           <div class="publication-links">
             <!-- Paper -->
             <span class="link-block">
-              <a href="./static/arxiv_KungfuBot2.pdf"
+              <a href="./static/Skate_Arxiv.pdf"
                 class="external-link button is-normal is-rounded is-dark">
                 <span class="icon">
                   <i class="fas fa-file-pdf"></i>
@@ -218,12 +236,12 @@
               </a>
             </span>
             <span class="link-block">
-              <a href="https://github.com/TeleHuman/PBHC"
-                class="external-link button is-normal is-rounded is-dark">
+              <a
+                class="external-link button is-normal is-rounded is-dark" style="pointer-events: none; opacity: 0.7;">
                 <span class="icon">
                   <i class="fab fa-github"></i>
                 </span>
-                <span>Code</span>
+                <span>in coming</span>
               </a>
             </span>
             </div>
@@ -238,7 +256,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-2">Video</h2>
-          <video src="./static/videos/bgm_kungfubot2.m4v"  autoplay  muted loop playsinline controls width="60%"></video>
+          <video src="./static/videos/"  autoplay  muted loop playsinline controls width="60%"></video>
       </div>
     </div>
 </section>
@@ -250,30 +268,54 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Learning versatile whole-body skills by tracking various human motions is a fundamental step toward general-purpose humanoid robots. 
-            This task is particularly challenging because a single policy must master a broad repertoire of motion skills while ensuring stability over long-horizon sequences. 
-            To this end, we present VMS, a unified whole-body controller that enables humanoid robots to learn diverse and dynamic behaviors within a single policy. 
-            Our framework integrates a hybrid tracking objective that balances local motion fidelity with global trajectory consistency, 
-            and an Orthogonal Mixture-of-Experts (OMoE) architecture that encourages skill specialization while enhancing generalization across motions. 
-            A segment-level tracking reward is further introduced to relax rigid step-wise matching, enhancing robustness when handling global displacements and transient inaccuracies. 
-            We validate VMS extensively in both simulation and real-world experiments, demonstrating accurate imitation of dynamic skills, 
-            stable performance over minute-long sequences, and strong generalization to unseen motions. 
-            These results highlight the potential of VMS as a scalable foundation for versatile humanoid whole-body control.
+            While current humanoid whole-body control frameworks predominantly rely on the static environment assumptions, addressing tasks characterized by high dynamism and complex interactions presents a formidable challenge. In this paper, we address humanoid skateboarding, a highly challenging task requiring stable dynamic maneuvering on an underactuated wheeled platform. This integrated system is governed by non-holonomic constraints and tightly coupled human-object interactions. Successfully executing this task requires simultaneous mastery of hybrid contact dynamics and robust balance control on a mechanically coupled, dynamically unstable skateboard. To overcome the aforementioned challenges, we propose <span style="color: #2e86c1"><b>HUSKY</b></span>, a learning-based framework that integrates humanoid-skateboard system modeling and physics-aware whole-body control. We first model the coupling relationship between board tilt and truck steering angles, enabling a principled analysis of system dynamics. Building upon this, <span style="color: #2e86c1"><b>HUSKY</b></span> leverages Adversarial Motion Priors (AMP) to learn human-like pushing motions and employs a physics-guided, heading-oriented strategy for lean-to-steer behaviors. Moreover, a trajectory-guided mechanism ensures smooth and stable transitions between pushing and steering. Experimental results on the Unitree G1 humanoid platform demonstrate that our framework enables stable and agile maneuvering on a skateboard in real-world scenarios.
           </p>
         </div>
       </div>
     </div>
   </div>
+  <br>
+  <br>
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-2">Humanoid-Skateboard System</h2>
+          <p style="text-align: left;">
+            We exploit the truck geometry to relate the board tilt angle $\gamma$ to the rotation of the truck axes. Due to the mechanical structure of the trucks, tilting the board by $\gamma$ induces a coordinated rotation of the truck axes, resulting in a kinematic coupling described by:<br><br>
+            <div style="text-align: center;">
+              <span>
+                $\tan \sigma = \tan \lambda\, \sin \gamma$
+              </span>
+            </div>
+            <br>
+          <span style="display: block; text-align: left;">
+            where $\lambda$ is the constant rake angle of the skateboard, and $\sigma$ is the resulting truck steering angle. <br>
+            Intuitively, this implies that the truck steering angle is determined by the board tilt angle, with larger tilts producing greater steering deflections.
+          </span>
+          </p>
+          <br>
+          <br>
+          <div style="display: flex; justify-content: center; align-items: center;">
+          <img style="max-width: 60%; max-height: 1000px;" src="./static/images/model.jpg" alt="图片1">
+          </div>
+          
+        </div>
+      </div>
+    </div>  
 
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-2">Method</h2>
           <p style="text-align: left;">
-
+            (a) We first analyze and model the humanoid–skateboard system, deriving a physics-inspired lean-to-steer coupling mechanism.
+            Due to the distinct contact dynamics and control objectives across skateboarding phases, we adopt a phase-wise learning strategy.<br><br>
+            (b) The learning-based whole-body control framework integrates an AMP-based pushing style for active forward propulsion, a steering strategy guided by physics-aware tilt references, and a trajectory-guided transition mechanism to enable stable switching between pushing and steering.
           </p>
+          <br>
+          <br>
           <div style="display: flex; justify-content: center; align-items: center;">
-          <img style="max-width: 120%; max-height: 600px;" src="./static/images/framework.jpg" alt="图片1">
+          <img style="max-width: 150%; max-height: 1000px;" src="./static/images/method.jpg" alt="图片1">
           </div>
           
         </div>
@@ -286,34 +328,26 @@
     <div class="columns is-centered">
       <div class="column is-full">
         <h2 class="title is-2 has-text-centered" style="padding-bottom: 10px;">
-          Real-World Experiments
+          Video Demonstrations
         </h2>
         <h2 class="title is-3 has-text-centered" style="padding-bottom: 10px;">
-          Stylized Locomotion
+          Pushing Phase
         </h2>
         <br>
         <div class="columns is-centered">
-          <div class="column is-one-third">
+          <div class="column is-half">
             <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Walking
+              Velocity 0.5 m/s
             </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/walk.m4v"
+            <video autoplay muted loop playsinline controls src="./static/videos"
                    style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
           </div>
 
-          <div class="column is-one-third">
+          <div class="column is-half">
             <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Marching step
+              Velocity 1.0 m/s
             </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/marching_step.m4v"
-                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
-          </div>
-          
-          <div class="column is-one-third">
-            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Running
-            </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/run.m4v"
+            <video autoplay muted loop playsinline controls src="./static/videos"
                    style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
           </div>
           
@@ -328,7 +362,101 @@
     <div class="columns is-centered">
       <div class="column is-full">
         <h2 class="title is-3 has-text-centered" style="padding-bottom: 10px;">
-          Athletic Skills
+          Steering Phase
+        </h2>
+        <br>
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
+              Turn Left
+            </h3>
+            <video autoplay muted loop playsinline controls src="./static/videos"
+                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
+          </div>
+
+          <div class="column is-half">
+            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
+              Turn Right
+            </h3>
+            <video autoplay muted loop playsinline controls src="./static/videos"
+                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered" style="padding-bottom: 10px;">
+          Transition Phase
+        </h2>
+        <br>
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
+              Pushing to Steering
+            </h3>
+            <video autoplay muted loop playsinline controls src="./static/videos"
+                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
+          </div>
+
+          <div class="column is-half">
+            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
+              Steering to Pushing
+            </h3>
+            <video autoplay muted loop playsinline controls src="./static/videos"
+                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
+          </div>
+        
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered" style="padding-bottom: 10px;">
+          Agile and Stable Humanoid Skateboarding
+        </h2>
+        <br>
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
+              Long-HorizonSkateboarding
+            </h3>
+            <video autoplay muted loop playsinline controls src="./static/videos"
+                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
+          </div>
+
+          <div class="column is-half">
+            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
+              Against Disturbance
+            </h3>
+            <video autoplay muted loop playsinline controls src="./static/videos"
+                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered" style="padding-bottom: 10px;">
+          Real-World Experiments
         </h2>
         <br>
         <div class="columns is-centered">
@@ -336,7 +464,7 @@
             <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
               Badminton
             </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/badminton.m4v"
+            <video autoplay muted loop playsinline controls src="./static/videos"
                    style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
           </div>
 
@@ -344,7 +472,7 @@
             <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
               Throw ball
             </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/throwball.m4v"
+            <video autoplay muted loop playsinline controls src="./static/videos"
                    style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
           </div>
           
@@ -352,7 +480,7 @@
             <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
               Swing racket
             </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/swing_racket.m4v"
+            <video autoplay muted loop playsinline controls src="./static/videos"
                    style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
           </div>
           
@@ -361,193 +489,6 @@
     </div>
   </div>
 </section>
-
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <h2 class="title is-3 has-text-centered" style="padding-bottom: 10px;">
-          Diverse Kicking
-        </h2>
-        <br>
-        <div class="columns is-centered">
-          <div class="column is-one-third">
-            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Sidekick
-            </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/sidekick.m4v"
-                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
-          </div>
-
-          <div class="column is-one-third">
-            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Jump kick
-            </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/jumpkick.m4v"
-                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
-          </div>
-          
-          <div class="column is-one-third">
-            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Outswing kick
-            </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/swingkick.m4v"
-                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <h2 class="title is-3 has-text-centered" style="padding-bottom: 10px;">
-          Kungfu Skills
-        </h2>
-        <br>
-        <div class="columns is-centered">
-          <div class="column is-one-fourth">
-            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Fighting punch
-            </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/fighting_punch.m4v"
-                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
-          </div>
-
-          <div class="column is-one-fourth">
-            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Horse stance punch
-            </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/horsestance_punch.m4v"
-                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
-          </div>
-          
-          <div class="column is-one-fourth">
-            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Stretch leg
-            </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/stretch_leg.m4v"
-                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
-          </div>
-
-          <div class="column is-one-fourth">
-            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Bruce Lee's pose
-            </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/brucelee.m4v"
-                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
-          </div>
-
-        </div>
-
-        </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <h2 class="title is-3 has-text-centered" style="padding-bottom: 10px;">
-          Long-Sequence Dance
-        </h2>
-        <br>
-        <div class="columns is-centered">
-          <div class="column is-half">
-            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Charleston dance
-            </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/Charleston.m4v"
-                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
-          </div>
-
-          <div class="column is-half">
-            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Free dance
-            </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/freedance.m4v"
-                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
-          </div>
-          
-        </div>
-
-         <div class="columns is-centered">
-          <div class="column is-half">
-            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Happy swing dance
-            </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/kuaileyaobai.m4v"
-                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
-          </div>
-
-          </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-full">
-        <h2 class="title is-3 has-text-centered" style="padding-bottom: 10px;">
-          Long-Sequence Martial Arts 
-        </h2>
-        <br>
-        <div class="columns is-centered">
-          <div class="column is-one-third">
-            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Tai Chi 1
-            </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/taichi01.m4v"
-                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
-          </div>
-
-          <div class="column is-one-third">
-            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Tai Chi 2
-            </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/taichi02.m4v"
-                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
-          </div>
-          
-          <div class="column is-one-third">
-            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Shaolin Kungfu
-            </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/shaolinkungfu.m4v"
-                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
-          </div>
-
-        </div>
-
-         <div class="columns is-centered">
-
-          <div class="column is-half">
-            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Seven Stars Fist
-            </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos/sevenstarfist.m4v"
-                   style="width: 100%; border-radius: 10px;"></video>
-          </div>
-          </div>
-
-          <div class="columns is-centered">
-
-
-          </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-  
 
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
@@ -555,66 +496,64 @@
             <h2 class="title is-2">Experiment Results</h2>
             <h2 class="title is-4">Main Results</h2>
             <p style="text-align: left;">
-              VMS outperforms ExBody2 and GMT across all metrics, 
-              achieving more accurate local tracking while effectively controlling global root positions.
-              Unlike prior methods that rely on root velocity and suffer from global drift, VMS reduces both global and local errors, 
-              demonstrating superior accuracy and stability.
+              The results demonstrate that <b><span style="color: #2e86c1"><b>HUSKY</b></span></b> enables robust humanoid skateboarding with stable, accurate, smooth motions and continuous, reliable phase transitions.
             </p>
             <div style="display: flex; justify-content: center; align-items: center;">
-            <img style="max-width: 100%; max-height: 1000px;" src="./static/images/main.jpg" alt="图片2">
+            <img style="max-width: 100%; max-height: 1000px;" src="./static/images/main_result.png" alt="图片2">
             </div>
             <br>
-            <br>
-            <h2 class="title is-4">Ablation on OMoE</h2>
+            <h2 class="title is-4">Analysis of Skateboard Modeling</h2>
             <p style="text-align: left;">
-              OMoE outperforms standard MoE and MLP baselines, 
-              achieving lower tracking errors and better generalization. 
-              Its orthogonalized experts learn distinct skill subspaces, 
-              enabling efficient specialization and flexible composition across diverse motion types.          
+              Omitting the equality constraint prevents board tilting from inducing truck steering, leaving the skateboard able only to glide straight forward with negligible turning capability.<br><br>
+              Without tilt guidance, the achievable heading range is narrow. In contrast, incorporating tilt guidance produces smooth turning trajectories and enables the humanoid to reach a substantially wider range of headings with higher precision.
+              <!-- <hr style="margin: 10px 0;"> -->
             </p>
             <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
-            <img style="max-width: 100%; max-height: 300px;" src="./static/images/tsne.jpg" alt="图1">
-            <p style="text-align: left;">
-              VMS adapts expert usage to motion complexity—repetitive motions like walking activate few experts, 
-              variable motions like dancing engage many, 
-              and intermediate motions show distinct patterns—demonstrating efficient specialization and flexible skill composition.          
-            </p>
-            <img style="max-width: 100%; max-height: 500px;" src="./static/images/weight.jpg" alt="图2">
+            <img style="max-width: 100%; max-height: 300px;" src="./static/images/tilt.jpg" alt="图1">
             </div>
             <br>
             <br>
-            <h2 class="title is-4">Ablation on Segment-level Reward</h2>
+            <h2 class="title is-4">Analysis of Phase Exploration</h2>
             <p style="text-align: left;">
-              We visualize representative motions with global targets (yellow) and local tracking targets (red). 
-              In a fast run with a sharp turn, global tracking fails due to accumulated errors, 
-              and step-wise tracking collapses during the turn. For a side kick, global tracking overemphasizes height and falls, 
-              while step-wise tracking loses balance. VMS, using a short future window, achieves smoother transitions, 
-              preserves motion style, and maintains overall stability.
-            </p>          
-            <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
-            <img style="max-width: 100%; max-height: 600px;" src="./static/images/example.jpg" alt="图1">
-            <p style="text-align: left;">
-              Test motions grouped by duration show that baseline strategies degrade on longer motions, 
-              while VMS remains robust, maintaining strong performance across long-horizon tasks.          
-            </p>
-            <img style="max-width: 100%; max-height: 500px;" src="./static/images/radar.jpg" alt="图2">
-            </div>
-            <br>
-            <br>
-            <h2 class="title is-4">Downstream Tasks</h2>
-            <p style="text-align: left;">
-              VMS demonstrates strong generalization across downstream applications. 
-              It can track text-to-motion instructions generated from natural language, 
-              enabling it to serve as a universal low-level controller for high-level planners. 
+              In both compared settings, episode length increases rapidly in early training. However, the steering contact reward remains low, indicating persistent errors in foot–board contact patterns. This suggests that policies trained without transition guidance fail to learn phase transitions, collapsing to a trivial pushing-only behavior and failing to properly execute the steering phase, even with mixed initialization.<br><br>
+              In contrast,<span style="color: #2e86c1"><b>HUSKY</b></span></b> discovers correct contact patterns by mid-training, successfully learns foot-mounting transitions, and achieves higher rewards. This demonstrates that <b>trajectory-guided transitions are essential</b> for enabling phase switching and avoiding local optima.
+              <br>
+              <!-- <hr style="margin: 10px 0;"> -->
             </p>
             <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
-            <img style="max-width: 100%; max-height: 600px;" src="./static/images/text2motion.jpg" alt="图1">
+            <img style="max-width: 100%; max-height: 600px;" src="./static/images/reward.jpg" alt="图1">
+            <br>
+
+            <h2 class="title is-4">Analysis of Transition Trajectories</h2>
             <p style="text-align: left;">
-              Moreover, with minimal finetuning, VMS adapts to extreme out-of-distribution skills, 
-              including acrobatic and collision-prone motions, showing its practicality for edge cases.          
+              The robot maintains smooth, coordinated whole-body motions with seamless transitions between pushing and steering. The trajectories display consistent foot placement and gradual body pose adjustments, reflecting strong temporal coherence and physical plausibility enabled by our trajectory-guided transitions.
+              <br>
+              <!-- <hr style="margin: 10px 0;"> -->
             </p>
-            <img style="max-width: 100%; max-height: 500px;" src="./static/images/finetune.jpg" alt="图2">
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+            <img style="max-width: 100%; max-height: 600px;" src="./static/images/traj.png" alt="图1">
+            <br>
+
+            <h2 class="title is-4">Real-World Transition Details</h2>
+            <p style="text-align: left;">
+              The transition begins with the foot pushing against the ground to generate propulsion, followed by lifting and placing the foot onto the skateboard. Once on the board, the humanoid performs in-place adjustments, rotating the body to align the torso perpendicular to the skateboard deck, thereby facilitating stable steering.
+              <br>
+              <!-- <hr style="margin: 10px 0;"> -->
+            </p>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+            <img style="max-width: 100%; max-height: 600px;" src="./static/images/detail.jpg" alt="图1">
             </div>
+            <br>
+            <h2 class="title is-4">Role of System Identification</h2>
+            <p style="text-align: left;">
+              Parameters from a compliant board fail on a stiffer one: simulation exploits board tilt during stepping for mounting, but the real stiff board’s negligible deformation breaks this assumption.
+              <br>
+              <br>
+              Conversely, applying the stiff-board parameters to the compliant board causes excessive leaning and loss of stability during steering, since the policy is not trained for such compliant dynamics. 
+              <!-- <hr style="margin: 10px 0;"> -->
+            </p>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+            <img style="max-width: 100%; max-height: 600px;" src="./static/images/real.jpg" alt="图1">
           </div>
       </div>
     </div>
@@ -630,15 +569,18 @@
   </div>
 </section>
 
+<section class="section" id="Acknowledgments">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Acknowledgments</h2>
+    Our training pipeline leverages <a href="https://github.com/mujocolab/mjlab" target="_blank">mjlab</a>, a custom integration combining <a href="https://mujoco.org/" target="_blank">MuJoCo</a>’s high-fidelity physics with <a href="https://github.com/isaac-sim/IsaacLab" target="_blank">Isaac Lab</a>’s scalable reinforcement learning APIs. We gratefully acknowledge these open-source communities and contributors.
+</code></pre>
+  </div>
+</section>
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{han2025kungfubot2,
-      title={KungfuBot2: Learning Versatile Motion Skills for Humanoid Whole-Body Control}, 
-      author={Han, Jinrui and Xie, Weiji and Zheng, Jiakun and Shi, Jiyuan and Zhang, Weinan and Xiao, Ting and Bai, Chenjia},
-      journal={arXiv:2509.16638},
-      year={2025}
-    }
+    incoming
 </code></pre>
   </div>
 </section>
