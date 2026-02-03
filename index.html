@@ -159,17 +159,17 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">
+          <h1 class="title is publication-title">
             <span style="font-variant: small-caps;"><span style="color: #2e86c1"><b>HUSKY</b></span>:</span>
             <!-- <span style="font-weight: bold; color: firebrick;">2</span>: -->
             Humanoid Skateboarding System via Physics-Aware Whole-Body Control
           </h1>
           <div class="is-size-4 publication-authors">
             <span class="author-block">
-              <a href="https://bwrooney82.github.io/">Jinrui Han</a><sup>&#42;1,2</sup>,
+              <a href="https://bwrooney82.github.io/">Jinrui Han</a><sup>1,2&#42;</sup>,
             </span>
              <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=iDv038AAAAAJ&hl=zh-CN">Dewei Wang</a><sup>&#42;1,3</sup>,
+              <a href="https://scholar.google.com/citations?user=iDv038AAAAAJ&hl=zh-CN">Dewei Wang</a><sup>1,3&#42;</sup>,
             </span>
             <span class="author-block">
               <a href="https://github.com/chenyunzhanggit">Chenyun Zhang</a><sup>1</sup>,
@@ -182,7 +182,7 @@
               <a href="http://luoping.me/">Ping Luo</a><sup>5</sup>,
             </span>
             <span class="author-block">
-              <a href="http://baichenjia.cn/">Chenjia Bai</a><sup>&dagger;1</sup>,
+              <a href="http://baichenjia.cn/">Chenjia Bai</a><sup>1&dagger;</sup>,
             </span>
             <span class="author-block">
               <a href="https://scholar.google.com.hk/citations?user=ahUibskAAAAJ&hl=zh-TW">Xuelong Li</a><sup> 1</sup>,
@@ -227,12 +227,12 @@
             </span>
             <!-- arXiv -->
             <span class="link-block">
-              <a href="https://arxiv.org/abs/2509.16638"
-                class="external-link button is-normal is-rounded is-dark">
+              <a
+                class="external-link button is-normal is-rounded is-dark" style="pointer-events: none; opacity: 0.7;">
                 <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                  <i class="ai ai-arxiv"></i>
                 </span>
-                <span>arXiv</span>
+                <span>in coming</span>
               </a>
             </span>
             <span class="link-block">
@@ -256,7 +256,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-2">Video</h2>
-          <video src="./static/videos/"  autoplay  muted loop playsinline controls width="60%"></video>
+          <video src="./static/videos/video.m4v"  autoplay muted loop playsinline controls width="80%"></video>
       </div>
     </div>
 </section>
@@ -315,7 +315,7 @@
           <br>
           <br>
           <div style="display: flex; justify-content: center; align-items: center;">
-          <img style="max-width: 150%; max-height: 1000px;" src="./static/images/method.jpg" alt="图片1">
+          <img style="max-width: 100%; max-height: 1000px;" src="./static/images/method.jpg" alt="图片1">
           </div>
           
         </div>
@@ -323,13 +323,45 @@
     </div>  
 
 
+    <section class="section">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-full">
+            <h2 class="title is-2 has-text-centered" style="padding-bottom: 10px;">
+              Video Demonstrations
+            </h2>
+            <h2 class="title is-3 has-text-centered" style="padding-bottom: 10px;">
+              Skateboard Model
+            </h2>
+            <br>
+            <div class="columns is-centered">
+              <div class="column is-half">
+                <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
+                  Ours
+                </h3>
+                <video autoplay muted loop playsinline controls src="./static/videos/model_ours.m4v"
+                       style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
+              </div>
+    
+              <div class="column is-half">
+                <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
+                  w/o coupling
+                </h3>
+                <video autoplay muted loop playsinline controls src="./static/videos/model_other.m4v"
+                       style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 <section class="section">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full">
-        <h2 class="title is-2 has-text-centered" style="padding-bottom: 10px;">
-          Video Demonstrations
-        </h2>
+        
         <h2 class="title is-3 has-text-centered" style="padding-bottom: 10px;">
           Pushing Phase
         </h2>
@@ -339,7 +371,7 @@
             <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
               Velocity 0.5 m/s
             </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos"
+            <video autoplay muted loop playsinline controls src="./static/videos/vel_0.5.m4v"
                    style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
           </div>
 
@@ -347,7 +379,7 @@
             <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
               Velocity 1.0 m/s
             </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos"
+            <video autoplay muted loop playsinline controls src="./static/videos/vel_1.0.m4v"
                    style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
           </div>
           
@@ -370,7 +402,7 @@
             <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
               Turn Left
             </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos"
+            <video autoplay muted loop playsinline controls src="./static/videos/steer_left.m4v"
                    style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
           </div>
 
@@ -378,7 +410,7 @@
             <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
               Turn Right
             </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos"
+            <video autoplay muted loop playsinline controls src="./static/videos/steer_right.m4v"
                    style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
           </div>
           
@@ -401,7 +433,7 @@
             <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
               Pushing to Steering
             </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos"
+            <video autoplay muted loop playsinline controls src="./static/videos/trans_1.m4v"
                    style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
           </div>
 
@@ -409,7 +441,7 @@
             <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
               Steering to Pushing
             </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos"
+            <video autoplay muted loop playsinline controls src="./static/videos/trans_2.m4v"
                    style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
           </div>
         
@@ -429,19 +461,11 @@
         </h2>
         <br>
         <div class="columns is-centered">
-          <div class="column is-half">
-            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
+          <div class="column is-full">
+            <!-- <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
               Long-HorizonSkateboarding
-            </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos"
-                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
-          </div>
-
-          <div class="column is-half">
-            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Against Disturbance
-            </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos"
+            </h3> -->
+            <video autoplay muted loop playsinline controls src="./static/videos/sim_cycle.m4v"
                    style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
           </div>
           
@@ -456,34 +480,78 @@
     <div class="columns is-centered">
       <div class="column is-full">
         <h2 class="title is-3 has-text-centered" style="padding-bottom: 10px;">
-          Real-World Experiments
+          Real-World Indoor Experiments
         </h2>
         <br>
         <div class="columns is-centered">
-          <div class="column is-one-third">
+          <div class="column is-full">
             <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Badminton
+              Real-World Indoor Steering 
             </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos"
+            <video autoplay muted loop playsinline controls src="./static/videos/real_steer.m4v"
                    style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
           </div>
+        </div>
 
-          <div class="column is-one-third">
+        <div class="columns is-centered">
+          <div class="column is-full">
             <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Throw ball
+              Real-World Transitions 
             </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos"
+            <video autoplay muted loop playsinline controls src="./static/videos/real_trans.m4v"
                    style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
           </div>
-          
-          <div class="column is-one-third">
+        </div>
+
+        <div class="columns is-centered">
+          <div class="column is-full">
             <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
-              Swing racket
+              Real-World More Skateboards 
             </h3>
-            <video autoplay muted loop playsinline controls src="./static/videos"
+            <video autoplay muted loop playsinline controls src="./static/videos/more.m4v"
                    style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
           </div>
-          
+        </div>
+
+        <div class="column is-full">
+          <h2 class="title is-3 has-text-centered" style="padding-bottom: 10px;">
+            Real-World Outdoor Experiments 
+          </h2>
+          <br>
+          <div class="columns is-centered">
+            <div class="column is-half">
+              <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
+                Outdoor Scene 1
+              </h3>
+              <video autoplay muted loop playsinline controls src="./static/videos/outdoor_1.m4v"
+                     style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
+            </div>
+  
+            <div class="column is-half">
+              <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
+                Outdoor Scene 2
+              </h3>
+              <video autoplay muted loop playsinline controls src="./static/videos/outdoor_2.m4v"
+                     style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
+            </div>
+          </div>
+          <div class="column is-full">
+            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
+              Outdoor Scene 3 
+            </h3>
+            <video autoplay muted loop playsinline controls src="./static/videos/outdoor_3.m4v"
+                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
+          </div>
+        </div>
+
+        <div class="columns is-centered">
+          <div class="column is-full">
+            <h3 class="title is-4 has-text-centered" style="margin-bottom: 10px; font-size: x-large;">
+              Real-World Outdoor Skateboarding 
+            </h3>
+            <video autoplay muted loop playsinline controls src="./static/videos/real_cycle.m4v"
+                   style="width: 100%; max-height: 500px; border-radius: 10px;"></video>
+          </div>
         </div>
       </div>
     </div>
@@ -515,8 +583,8 @@
             <br>
             <h2 class="title is-4">Analysis of Phase Exploration</h2>
             <p style="text-align: left;">
-              In both compared settings, episode length increases rapidly in early training. However, the steering contact reward remains low, indicating persistent errors in foot–board contact patterns. This suggests that policies trained without transition guidance fail to learn phase transitions, collapsing to a trivial pushing-only behavior and failing to properly execute the steering phase, even with mixed initialization.<br><br>
-              In contrast,<span style="color: #2e86c1"><b>HUSKY</b></span></b> discovers correct contact patterns by mid-training, successfully learns foot-mounting transitions, and achieves higher rewards. This demonstrates that <b>trajectory-guided transitions are essential</b> for enabling phase switching and avoiding local optima.
+              In both compared settings, episode length increases rapidly in early training. However, the steering contact reward remains low, indicating persistent errors in foot–board contact patterns.<br><br>
+              In contrast,<span style="color: #2e86c1"><b>HUSKY</b></span></b> discovers correct contact patterns by mid-training, successfully learns foot-mounting transitions, and achieves higher rewards. This demonstrates that trajectory-guided transitions are essential for enabling phase switching and avoiding local optima.
               <br>
               <!-- <hr style="margin: 10px 0;"> -->
             </p>
